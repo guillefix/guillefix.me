@@ -1,0 +1,9 @@
+.glowy {text-shadow: 0 0 1em #277E9C}
+
+.hint {
+	height: 30px;
+	font-size: 15px;
+	padding-bottom: 40px;
+ 	position: fixed;
+ 	bottom: 0px;
+ }
