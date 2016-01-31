@@ -63,7 +63,9 @@
 <script src="./index_files/onready.js"></script>
 <script src="./index_files/loadPresentation.js"></script>
 <script src="./js/jquery.js"></script>
-<script src="./js/script.js"></script>
+ <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+<!-- <script src="./js/jquery.zoomooz.min.js"></script> -->
+<script type="text/javascript" src="./js/script.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <script>
@@ -73,11 +75,11 @@ ready(function() {
 
     if (!window.presStarted) {
         startPres(document, window);
-        impress().init();   
+        impress().init();
     }
 
-    if ("ontouchstart" in document.documentElement) { 
-        document.querySelector(".hint").innerHTML = 
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML =
             "<p>Tap on the left or right to navigate</p>";
     }
 });
@@ -90,7 +92,7 @@ ready(function() {
 
     ga('create', 'UA-42322531-1', 'strut.io');
     ga('send', 'pageview');
-    </script>
+</script>
 </head>
 <body class="impress-supported impress-enabled" style="height: 100%; overflow: hidden;">
 <style type="text/css">
@@ -103,29 +105,29 @@ ready(function() {
 
 
 
-	
-		
+
+
 		.strut-surface > .strut-slide-0 {
 			/*this only works for bg images or custom bgs*/
 			/*for bg classes we'll have to introduce a data api*/
 			background-image: url(https://36.media.tumblr.com/b7fff23a47de1bc2ee6eb3f5255caaf8/tumblr_nzgstaSlCN1ruo6jxo1_1280.jpg);
 		}
-		
-		
-	
 
-	
-		
-		
-	
 
-	
-		
-		
-	
+
+
+
+
+
+
+
+
+
+
+
 
 </style>
-<!-- This is a work around / hack to get the user's browser to download the fonts 
+<!-- This is a work around / hack to get the user's browser to download the fonts
  if they decide to save the presentation. -->
 <div style="visibility: hidden; width: 0px; height: 0px">
 <img src="./index_files/Lato-Bold.woff">
@@ -149,168 +151,203 @@ ready(function() {
 <div class="bg bg-surf-grad-black strut-surface">
 <div class="bg innerBg strut-slide-2 bg-surf-grad-black">
 <div id="impress" style="position: absolute; transform-origin: left top 0px; transition: all 0ms ease-in-out 0ms; transform-style: preserve-3d; top: 50%; left: 50%; transform: perspective(1000px) scale(1);"><div style="position: absolute; transform-origin: left top 0px; transition: all 0ms ease-in-out 0ms; transform-style: preserve-3d; transform: rotateZ(0deg) rotateY(0deg) rotateX(0deg) translate3d(-9885.01px, -5729.28px, 0px);">
-	
-		
+
+	<!--STEP 1: HOME-->
 			<div class="step present active" data-state="strut-slide-0" data-x="9885.013333333334" data-y="3594.24" data-scale="3" id="step-1" style="position: absolute; transform: translate(-50%, -50%) translate3d(9885.01px, 3594.24px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
-			<div class=" slideContainer strut-slide-0" style="width: 1024px; height: 768px;">
-			<div class="themedArea">
-				<div class="componentContainer " style="top: 170px; left: 27%; -webkit-transform: rotate(0.28rad)  ; -moz-transform: rotate(0.28rad)  ; transform: rotate(0.28rad)  ; width: px; height: px;">
-				<div class="transformContainer" style="-webkit-transform: scale(1, 1);
-				-moz-transform: scale(1, 1);
-				transform: scale(1, 1)">
-				<div style="font-size: 37px;" class="antialias">
-				<a href="#/step-3" class="glowy"><font color="#000">who am I?</font></a>
-				</div>
-				</div>
-				</div>
+            			<div class=" slideContainer strut-slide-0" style="width: 1024px; height: 768px;">
+              			<div class="themedArea">
+              				<div class="componentContainer " style="top: 170px; left: 27%; -webkit-transform: rotate(0.28rad)  ; -moz-transform: rotate(0.28rad)  ; transform: rotate(0.28rad)  ; width: px; height: px;">
+                				<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+                				-moz-transform: scale(1, 1);
+                				transform: scale(1, 1)">
+                  				<div style="font-size: 37px;" class="antialias">
+                  				<a href="#/step-3" class="glowy"><font color="#000">who am I?</font></a>
+                  				</div>
+                				</div>
+              				</div>
 
-				<div class="componentContainer " style="top: 170px; left: 60%; -webkit-transform: rotate(-0.28rad)  ; -moz-transform: rotate(-0.28rad)  ; transform: rotate(-0.28rad)  ; width: px; height: px;">
-				<div class="transformContainer" style="-webkit-transform: scale(1, 1);
-				-moz-transform: scale(1, 1);
-				transform: scale(1, 1)">
-				<div style="font-size: 40px;" class="antialias">
-				<a href="#/step-2" class="glowy"><font color="#000">projects</font></a>
-				</div>
-				</div>
-				</div>
-			</div>
-			
-			</div>
-		
+                      <div class="componentContainer" style="top: 150px; left: 48%; width: px; height: px;">
+                				<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+                				-moz-transform: scale(1, 1);
+                				transform: scale(1, 1)">
+                  				<div style="font-size: 20px;" class="antialias">
+                  				<a href="#" id="cosmosLink" class="glowy-dark"><font color="#fff">cosmos</font></a>
+                  				</div>
+                				</div>
+              				</div>
+
+              				<div class="componentContainer " style="top: 170px; left: 60%; -webkit-transform: rotate(-0.28rad)  ; -moz-transform: rotate(-0.28rad)  ; transform: rotate(-0.28rad)  ; width: px; height: px;">
+                				<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+                				-moz-transform: scale(1, 1);
+                				transform: scale(1, 1)">
+                  				<div style="font-size: 40px;" class="antialias">
+                  				<a href="#/step-2" class="glowy"><font color="#000">projects</font></a>
+                  				</div>
+                				</div>
+              				</div>
+              			</div>
+
+            			</div>
+
 		</div>
-	
-		
-			<div class="step future" data-state="strut-slide-1 bg-surf-grad-black " data-x="12916.053333333333" data-y="3640.32" data-rotate-y="63" data-z="-3000" data-scale="3" id="step-2" style="position: absolute; transform: translate(-50%, -50%) translate3d(12916.1px, 3640.32px, -1000px) rotateX(0deg) rotateY(58.4417deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
-			<div class=" slideContainer strut-slide-1" style="width: 1024px; height: 768px;">
-			<div class="themedArea">
-			
-			</div>
+		<!--end of STEP 1-->
+
+    	<!--STEP 2: PROJECTS-->
+			<div class="step future" data-state="strut-slide-1 bg-surf-grad-black " data-x="12916.053333333333" data-y="3640.32" data-rotate-y="-60" data-z="3000" data-scale="3" id="step-2" style="position: absolute; transform: translate(-50%, -50%) translate3d(12916.1px, 3640.32px, -1000px) rotateX(0deg) rotateY(58.4417deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+            			<div class=" slideContainer strut-slide-1" style="width: 1024px; height: 768px;">
+                			<div class="themedArea">
+
+                			</div>
 
 
-			<div class="componentContainer " style="top: 50%; left: 0px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
-<div class="transformContainer" style="-webkit-transform: scale(1, 1);
--moz-transform: scale(1, 1);
-transform: scale(1, 1)">
-<div style="font-size: 50px;" class="antialias">
-	<div style="text-align: left;">
-		<font color="#fff">
-			<a href="#step-1"><span class="nav-icon glyphicon glyphicon-chevron-left"></span></a>
-		</font>
-	</div>
-</div>
-</div>
-</div>
-			
-			<div class="componentContainer " style="top: 41px; left: 382px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
-<div class="transformContainer" style="-webkit-transform: scale(1, 1);
--moz-transform: scale(1, 1);
-transform: scale(1, 1)">
-<div style="font-size: 72px;" class="antialias">
-<font color="#eeeeee">Projects</font>
-</div>
-</div>
-</div>
-			
-			<div class="componentContainer " style="top: 224px; left: 112px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
-<div class="transformContainer" style="-webkit-transform: scale(1, 1);
--moz-transform: scale(1, 1);
-transform: scale(1, 1)">
-<div style="font-size: 36px;" class="antialias">
-<font color="#eeeeee"><a href="https://github.com/guillefix/augmath" target="_blank">AugMath</a></font>
-</div>
-</div>
-</div>
-			
-			<div class="componentContainer " style="top: 492px; left: 113px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
-<div class="transformContainer" style="-webkit-transform: scale(1, 1);
--moz-transform: scale(1, 1);
-transform: scale(1, 1)">
-<div style="font-size: 24px;" class="antialias">
-<font color="#eeeeee"><a href="https://github.com/guillefix/jera-stokosm" target="_blank">Jera-Stokosm</a></font>
-</div>
-</div>
-</div>
-			
-			</div>
-		
+                    	<div class="componentContainer " style="top: 50%; left: 0px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                        <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+                        -moz-transform: scale(1, 1);
+                        transform: scale(1, 1)">
+                        <div style="font-size: 50px;" class="antialias">
+                        	<div style="text-align: left;">
+                        		<font color="#fff">
+                        			<a href="#step-1"><span class="nav-icon glyphicon glyphicon-chevron-left"></span></a>
+                        		</font>
+                        	</div>
+                        </div>
+                        </div>
+                      </div>
+
+                			<div class="componentContainer " style="top: 41px; left: 382px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                          <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+                          -moz-transform: scale(1, 1);
+                          transform: scale(1, 1)">
+                            <div style="font-size: 72px;" class="antialias">
+                            <font color="#eeeeee">Projects</font>
+                            </div>
+                          </div>
+                      </div>
+
+                			<div class="componentContainer " style="top: 280px; left: 43%; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                          <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+                          -moz-transform: scale(1, 1);
+                          transform: scale(1, 1)">
+                            <div style="font-size: 36px;" class="antialias">
+                            <font color="#eeeeee"><a href="https://github.com/guillefix/augmath" target="_blank">AugMath</a></font>
+                            </div>
+                          </div>
+                      </div>
+
+                			<div class="componentContainer " style="top: 520px; left: 43%; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                        <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+                        -moz-transform: scale(1, 1);
+                        transform: scale(1, 1)">
+                          <div style="font-size: 24px;" class="antialias">
+                          <font color="#eeeeee"><a href="https://github.com/guillefix/jera-stokosm" target="_blank">Jera-Stokosm</a></font>
+                          </div>
+                        </div>
+                      </div>
+
+            			</div>
+
 		</div>
-	
-		
-			<div class="step active present" data-state="strut-slide-2 bg-surf-grad-black " data-x="6000" data-y="3640.32" data-rotate-y="58.44169510334397" data-z="3000" data-scale="3" id="step-3" style="position: absolute; transform: translate(-50%, -50%) translate3d(12916.1px, 3640.32px, -1000px) rotateX(0deg) rotateY(58.4417deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
-			<div class=" slideContainer strut-slide-2" style="width: 1024px; height: 768px;">
-			<div class="themedArea">
-			
-			</div>
-			
-			<div class="componentContainer " style="top: 53px; left: 348px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
-<div class="transformContainer" style="-webkit-transform: scale(1, 1);
--moz-transform: scale(1, 1);
-transform: scale(1, 1)">
-<div style="font-size: 72px;" class="antialias">
-<font color="#ffffff">Who am </font><font color="#0121ff">I</font><font color="#ffffff">?</font><br>
-</div>
-</div>
-</div>
+    	<!--end of STEP 2-->
 
-<div class="componentContainer " style="top: 50%; right: 0px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
-<div class="transformContainer" style="-webkit-transform: scale(1, 1);
--moz-transform: scale(1, 1);
-transform: scale(1, 1)">
-<div style="font-size: 50px;" class="antialias">
-	<div style="text-align: left;">
-		<font color="#fff">
-			<a href="#step-1"><span class="nav-icon glyphicon glyphicon-chevron-right"></span></a>
-		</font>
-	</div>
-</div>
-</div>
-</div>
+			<!--STEP 3: WHO AM I-->
+			<div class="step active present" data-state="strut-slide-2 bg-surf-grad-black " data-x="6000" data-y="3640.32" data-rotate-y="60" data-z="3000" data-scale="3" id="step-3" style="position: absolute; transform: translate(-50%, -50%) translate3d(12916.1px, 3640.32px, -1000px) rotateX(0deg) rotateY(58.4417deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+                			<div class=" slideContainer strut-slide-2" style="width: 1024px; height: 768px;">
+                    			<div class="themedArea">
 
-<div class="componentContainer " style="top: 200px; left: 78px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
-<div class="transformContainer" style="-webkit-transform: scale(1, 1);
--moz-transform: scale(1, 1);
-transform: scale(1, 1)">
-<div style="font-size: 16px;" class="antialias">
-	<div style="text-align: left;"><font color="#fff"><font color="#0121ff">I</font> am a human, with unbounded curiosity and desire to discover what's possible.</font></div>
-	<div style="text-align: left;"><font color="#fff"><font color="#0121ff">I</font> am studying <a target="_blank" href="http://mmathphys.physics.ox.ac.uk/">mathematical and theoretical physics at the University of Oxford</a></font></div>
-	<div style="text-align: left;"><font color="#fff"><font color="#0121ff">I</font> love learning: everything from computer science to biology to philosophy</font></div>
-	<div style="text-align: left;"><font color="#fff"><font color="#0121ff">I</font> love creating: creating solutions to problems, creating new problems to solve, creating new <em>ways</em> of solving.</font></div>
-	<br>
-	<div style="text-align: left;"><font color="#fff">But in truth, invention and discovery are not so well separated; <font color="#0121ff">I</font> am just a catalyzer of Nature's creativity.</div>
-	<br>
-	<br>
-	<div class="social">
-	    <ul>
-	    	<li><a href="https://www.facebook.com/guillermovalleperez"><i class="fa fa-lg fa-facebook"></i></a> </li>
-	    	<li><a href="https://uk.linkedin.com/in/guillefix"><i class="fa fa-lg fa-linkedin"></i></a></li>
-	    	<li><a href="https://twitter.com/guillefix"><i class="fa fa-lg fa-twitter"></i></a></li>
-			<li><a href="https://plus.google.com/+GuillermoValleCosmos"><i class="fa fa-lg fa-google-plus"></i></a></li>
-			<li><a href="https://github.com/guillefix/"><i class="fa fa-lg fa-github"></i></a></li>
-		</ul>
-	</div>
-</div>
-</div>
-</div>
-			
-			<div class="componentContainer " style="bottom: 0px; left: 78px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
-<div class="transformContainer" style="-webkit-transform: scale(1, 1);
--moz-transform: scale(1, 1);
-transform: scale(1, 1)">
-<div style="font-size: 12px;" class="antialias">
-<div style="text-align: left;"><font color="#00a616" id="identity_quote_1"></font></div><div style="text-align: left;"><font color="#00a616" id="identity_quote_2"></font></div><div style="text-align: left;"><font color="#00a616" id="identity_quote_3"></font></div><div style="text-align: left;"><font color="#00a616" id="identity_quote_4"></font></div><div style="text-align: left;"><font color="#00a616" id="identity_quote_5"></font></div><div style="text-align: left;"><font color="#00a616" id="identity_quote_6"></font></div><div style="text-align: left;"><font color="#00a616" id="identity_quote_7"></font></div><div style="text-align: left;"><font color="#00a616" id="identity_quote_8"></font></div><div style="text-align: left;"><font color="#00a616"><b id="identity_quote_9"></b></font></div>
-</div>
-</div>
-</div>
-			
-			</div>
-		
+                    			</div>
+
+                          <div class="componentContainer " style="top: 53px; left: 348px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                            <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+                            -moz-transform: scale(1, 1);
+                            transform: scale(1, 1)">
+                              <div style="font-size: 72px;" class="antialias">
+                              <font color="#ffffff">Who am </font><font color="#0121ff">I</font><font color="#ffffff">?</font><br>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="componentContainer " style="top: 50%; right: 0px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                            <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+                            -moz-transform: scale(1, 1);
+                            transform: scale(1, 1)">
+                              <div style="font-size: 50px;" class="antialias">
+                              	<div style="text-align: left;">
+                              		<font color="#fff">
+                              			<a href="#step-1"><span class="nav-icon glyphicon glyphicon-chevron-right"></span></a>
+                              		</font>
+                              	</div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="componentContainer " style="top: 200px; left: 78px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                            <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+                            -moz-transform: scale(1, 1);
+                            transform: scale(1, 1)">
+                              <div style="font-size: 16px;" class="antialias">
+                              	<div style="text-align: left;"><font color="#fff"><font color="#0121ff">I</font> am a human, with unbounded curiosity and desire to discover what's possible.</font></div>
+                              	<div style="text-align: left;"><font color="#fff"><font color="#0121ff">I</font> am studying <a target="_blank" href="http://mmathphys.physics.ox.ac.uk/">mathematical and theoretical physics at the University of Oxford</a></font></div>
+                              	<div style="text-align: left;"><font color="#fff"><font color="#0121ff">I</font> love learning: everything from computer science to biology to philosophy</font></div>
+                              	<div style="text-align: left;"><font color="#fff"><font color="#0121ff">I</font> love creating: creating solutions to problems, creating new problems to solve, creating new <em>ways</em> of solving.</font></div>
+                              	<br>
+                              	<div style="text-align: left;"><font color="#fff">But in truth, invention and discovery are not so well separated; <font color="#0121ff">I</font> am just a catalyzer of Nature's creativity.</div>
+                              	<br>
+                              	<br>
+                              	<div class="social">
+                              	    <ul>
+                              	    	<li><a href="https://www.facebook.com/guillermovalleperez"><i class="fa fa-lg fa-facebook"></i></a> </li>
+                              	    	<li><a href="https://uk.linkedin.com/in/guillefix"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                              	    	<li><a href="https://twitter.com/guillefix"><i class="fa fa-lg fa-twitter"></i></a></li>
+                              			<li><a href="https://plus.google.com/+GuillermoValleCosmos"><i class="fa fa-lg fa-google-plus"></i></a></li>
+                              			<li><a href="https://github.com/guillefix/"><i class="fa fa-lg fa-github"></i></a></li>
+                              		</ul>
+                              	</div>
+                              </div>
+                            </div>
+                          </div>
+
+                    			<div class="componentContainer " style="bottom: 0px; left: 78px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                            <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+                            -moz-transform: scale(1, 1);
+                            transform: scale(1, 1)">
+                              <div style="font-size: 12px;" class="antialias">
+                              <div style="text-align: left;"><font color="#00a616" id="identity_quote_1"></font></div><div style="text-align: left;"><font color="#00a616" id="identity_quote_2"></font></div><div style="text-align: left;"><font color="#00a616" id="identity_quote_3"></font></div><div style="text-align: left;"><font color="#00a616" id="identity_quote_4"></font></div><div style="text-align: left;"><font color="#00a616" id="identity_quote_5"></font></div><div style="text-align: left;"><font color="#00a616" id="identity_quote_6"></font></div><div style="text-align: left;"><font color="#00a616" id="identity_quote_7"></font></div><div style="text-align: left;"><font color="#00a616" id="identity_quote_8"></font></div><div style="text-align: left;"><font color="#00a616"><b id="identity_quote_9"></b></font></div>
+                              </div>
+                            </div>
+                          </div>
+
+                			</div>
+
 		</div>
-	
+    	<!--end of STEP 3-->
+
 	<!-- <div id="overview" class="step future" data-state="strut-slide-overview" data-x="11400.533333333333" data-y="4661.76" data-scale="9" style="position: absolute; transform: translate(-50%, -50%) translate3d(11400.5px, 4661.76px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(9); transform-style: preserve-3d;"></div> -->
-	
+
 </div></div>
 <div class="hint">
     <p>Use a spacebar or arrow keys to navigate</p>
 </div>
 </div>
-</div></body></html>
+</div>
+</body>
+
+<script type="text/javascript" src="./js/zoom.js"></script>
+<script>
+zoomedin=false;
+$("#cosmosLink").click(function() {
+  if (zoomedin) {zoom.out(); zommedin=false;}
+  else {
+    zoom.to({
+        element: $("#cosmosLink")[0],
+        callback: function() {
+          console.log("welcome");
+          window.location.href = "cosmos.html";
+          zoomedin=true;
+        }
+      });
+  }
+
+});
+</script>
+
+</html>

@@ -1,5 +1,11 @@
 .glowy {text-shadow: 0 0 1em #277E9C}
 
+.glowy-dark {text-shadow: 0 0 2em #075E7C}
+
+#cosmosLink:hover {
+	text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+}
+
 .hint {
 	height: 30px;
 	font-size: 15px;
