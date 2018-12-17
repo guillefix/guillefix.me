@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="5.1.15" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="static.css">
+<title>Liquid biopsy: Cosmos — Everything there was, there is, and there will be</title>
+</head>
+<body class="tc-body">
+
+<section class="tc-story-river">
+
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists   tc-tagged-Biopsy"><div class="tc-tiddler-title">
+<div class="tc-titlebar">
+<span class="tc-tiddler-controls">
+<span class=" tc-reveal"><button aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span>
+</span>
+
+<span>
+
+<span class="tc-tiddler-title-icon" style="fill:;">
+
+</span>
+
+
+
+<h2 class="tc-title">
+Liquid biopsy
+</h2>
+
+</span>
+
+</div>
+
+<div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div>
+</div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal">
+<div class="tc-subtitle">
+<a class="tc-tiddlylink tc-tiddlylink-missing" href="cosmos.html">
+cosmos
+</a> 16th December 2018 at 2:39am
+</div>
+</div>
+<div class=" tc-reveal">
+<div class="tc-tags-wrapper"><span class="tc-tag-list-item">
+
+
+<span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#333333;
+color:#333333;">
+ Biopsy
+</span>
+
+<span class="tc-drop-down tc-reveal" hidden="true"></span>
+
+</span>
+</div>
+</div>
+<div class="tc-tiddler-body tc-reveal"><h2 class=""><u>CancerSEEK</u></h2><p><a class="tc-tiddlylink-external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6080308/" rel="noopener noreferrer" target="_blank">Detection and localization of surgically resectable cancers with a multi-analyte blood test</a></p><p><u>Objectives</u></p><p>In a <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Medical%2520test.html">Medical test</a>, we want to <strong>maximize</strong> <strong>sensitivity</strong> (op. of <a class="tc-tiddlylink tc-tiddlylink-missing" href="False%2520negative.html">False negative</a>s) and <strong>specificity</strong> (op. of <a class="tc-tiddlylink tc-tiddlylink-missing" href="False%2520positive.html">False positive</a>s)</p><p><u>Procedure</u></p><ol><li><strong>circulating tumor DNA (ctDNA) multiplex-<a class="tc-tiddlylink tc-tiddlylink-resolves" href="PCR.html">PCR</a></strong>. 61 amplicons... 1933 distinct genomic positions<ol><li>First, the test must query a sufficient number of bases to allow detection of a large number of cancers.</li><li>Second, each base queried in the test must be sequenced thousands of times to detect low-prevalence mutations (11, 19, 21, 22).</li><li>Third, there must be a limit on the number of bases queried in the test because the more bases queried, the more likely that artifactual mutations would be identified, reducing the signal-to-noise ratio. </li><li>And fourth, for implementation in a screening setting, the test must be cost effective and amenable to high throughput, factors that limit the amount of sequencing that can be performed.</li></ol></li><li><strong>protein biomarkers <a class="tc-tiddlylink tc-tiddlylink-missing" href="Immunoassay.html">Immunoassay</a></strong> <sub>(this was because initial studies demonstrated that the maximum sensitivity of plasma DNA-based tests—liquid biopsies—was limited for localized cancers (11))</sub>. 39 proteins considered, of which they only used 8 for cancerSEEK</li></ol><p><small>
+We searched for the minimum number of short <a class="tc-tiddlylink tc-tiddlylink-missing" href="Amplicon.html">Amplicon</a>s that would allow us to detect at least one driver gene mutation in each of the eight tumor types evaluated.  Once this plateau was reached, raising the number of amplicons would not increase sensitivity substantially but would decrease specificity (increase the probability of false-positive results). For instance that could happen if some mutations happen simultaneously when on cancer, but they may occur separately on non-cancer patients, so that by including both as indicators of cancer, we don't increase probability of detecting cancer when it's there, but we do increase probability of false positives.
+</small></p><p>Note that as far as the discussion of <u>which <a class="tc-tiddlylink tc-tiddlylink-missing" href="Biomarker.html">Biomarker</a>s to use</u>, they seem to consider the diagnostic function consisting of: &quot;if any of the markers is present, predict cancer&quot;, at least for the discussion about which markers they chose. I think they trained a ML model later, which can take into account more complicated dependencies. But why not take these dependencies into account when choosing the markers?</p><p><u>Experiment</u></p><p>We used CancerSEEK to study <strong>1005 patients who had been diagnosed with stage I to III cancers</strong> of the ovary, liver, stomach, pancreas, esophagus, colorectum, lung, or breast. The <strong>healthy control</strong> cohort consisted of <strong>812 individuals</strong> of median age 55 (range 17 to 88) with no known history of cancer, high-grade dysplasia, auto-immune disease, or chronic kidney disease.</p><p><u><a class="tc-tiddlylink tc-tiddlylink-resolves" href="Statistics.html">Statistical</a> method</u></p><p>The presence of a mutation in an assayed gene or an elevation in the level of any of these proteins would classify a patient as positive. It was therefore imperative to use rigorous statistical methods to ensure the accuracy of the test. We used log ratios to evaluate mutations and incorporated them into a <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Logistic%2520regression.html">Logistic regression</a> algorithm that took into account both mutation data and protein biomarker levels to score CancerSEEK test results (supplementary materials). </p><p>The mean sensitivities and specificities were determined by 10 iterations of 10-fold <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Cross-validation.html">Cross-validation</a>s. The receiver operating characteristic (ROC) curves for the entire cohort of cancer patients and controls in one representative iteration is shown in Fig. 2A.</p><p>What's log ratios? Ah log <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Likelihood.html">Likelihood</a> ratio. Then the ROC curve is probably obtained by sweeping the threshold to consider the ratio as indicative of the marker being &quot;detected&quot; or &quot;undetected&quot; <mark>Check this </mark></p><p>The median sensitivity of CancerSEEK among the eight cancer types evaluated was 70% (P &lt; 10−96 one-sided binomial test) and ranged from 98% in ovarian cancers to 33% in breast cancers (Fig. 2C). At this sensitivity, the specificity was &gt;99%</p><p><mark>Is the binomial test technically justified if the predictor has been obtained from the data?</mark> I mean just use cross-validation..., hmm (<sub>or <a class="tc-tiddlylink tc-tiddlylink-resolves" href="PAC-Bayes.html">PAC-Bayes</a>... maybe</sub>)</p><p>The importance ranking of the ctDNA and protein features used in CancerSEEK are provided in table S9, and a <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Principal%2520component%2520analysis.html">Principal component analysis</a> displaying the clustering of individuals with and without cancer is shown in fig. S3.</p><hr><p>GRAIL</p></div>
+
+
+</div>
+
+</p>
+
+</section>
+</body>
+</html>
