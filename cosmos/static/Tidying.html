@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="5.1.15" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="static.css">
+<title>Tidying: Cosmos — All that is, or was, or ever will be</title>
+</head>
+<body class="tc-body">
+
+<section class="tc-story-river">
+
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists   tc-tagged-Hygiene"><div class="tc-tiddler-title">
+<div class="tc-titlebar">
+<span class="tc-tiddler-controls">
+<span class=" tc-reveal"><button aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span>
+</span>
+
+<span>
+
+<span class="tc-tiddler-title-icon" style="fill:;">
+
+</span>
+
+
+
+<h2 class="tc-title">
+Tidying
+</h2>
+
+</span>
+
+</div>
+
+<div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div>
+</div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal">
+<div class="tc-subtitle">
+<a class="tc-tiddlylink tc-tiddlylink-missing" href="cosmos.html">
+cosmos
+</a> 10th April 2019 at 9:58am
+</div>
+</div>
+<div class=" tc-reveal">
+<div class="tc-tags-wrapper"><span class="tc-tag-list-item">
+
+
+<span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#333333;
+color:#333333;">
+ Hygiene
+</span>
+
+<span class="tc-drop-down tc-reveal" hidden="true"></span>
+
+</span>
+</div>
+</div>
+<div class="tc-tiddler-body tc-reveal"><p><a class="tc-tiddlylink-external" href="https://www.facebook.com/guillermovalleperez/posts/10156793405136223" rel="noopener noreferrer" target="_blank">https://www.facebook.com/guillermovalleperez/posts/10156793405136223</a></p><p>Hmm. I really need to tidy my room. 
+So I started thinking about how tiding is similar to sorting
+So then I started thinking of formalizing the tiding problem, but it all got super complicated and NP-complete, and also my computer crashed, so I lost what I wrote
+So now I started thinking of heuristics, and inspired by merge sort, I came up with</p><p>_merge tidy_</p><p>1. Divide room into sensible regions
+2. For each region, divide objects into those that belong inside that region, and those that belong outside it.
+3. For those inside the region, tidy them. You are saving having to move too much around the room, by only tidying locally!
+4. After doing this for every region, in a spatial sequence, then merge two contiguous regions, one of them being the one you ended up in. A merge is defined by taking the &quot;belong outside&quot; objects from each of the two regions, and &quot;tidying&quot; them (i.e. divide them into &quot;outside the union of the regions&quot; and &quot;inside it&quot;, and then tidy those inside).
+5. Keep merging until you have tidied the whole room.</p><p>This has O(nlogn) running time in the worst case, like merge sort, but maybe it has better average case? Hmm maybe I'll analyze it more after I tidy my room.</p><p>Also, whether it can be done in-place or not depends on physical constraints of the regions and the objects in them. Alternatively, if possible, one can use the floor as memory, and have O(n) memory in the worst case, but again, probably better for average room.</p><p>Will report on how well it went.</p><p>8</p></div>
+
+
+</div>
+
+</p>
+
+</section>
+</body>
+</html>

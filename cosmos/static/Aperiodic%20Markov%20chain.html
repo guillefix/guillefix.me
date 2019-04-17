@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="5.1.15" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="static.css">
+<title>Aperiodic Markov chain: Cosmos — All that is, or was, or ever will be</title>
+</head>
+<body class="tc-body">
+
+<section class="tc-story-river">
+
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists   tc-tagged-Markov%20chain"><div class="tc-tiddler-title">
+<div class="tc-titlebar">
+<span class="tc-tiddler-controls">
+<span class=" tc-reveal"><button aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span>
+</span>
+
+<span>
+
+<span class="tc-tiddler-title-icon" style="fill:;">
+
+</span>
+
+
+
+<h2 class="tc-title">
+Aperiodic Markov chain
+</h2>
+
+</span>
+
+</div>
+
+<div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div>
+</div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal">
+<div class="tc-subtitle">
+<a class="tc-tiddlylink tc-tiddlylink-missing" href="cosmos.html">
+cosmos
+</a> 10th April 2019 at 9:58am
+</div>
+</div>
+<div class=" tc-reveal">
+<div class="tc-tags-wrapper"><span class="tc-tag-list-item">
+
+
+<span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:#333333;
+color:#333333;">
+ Markov chain
+</span>
+
+<span class="tc-drop-down tc-reveal" hidden="true"></span>
+
+</span>
+</div>
+</div>
+<div class="tc-tiddler-body tc-reveal"><p>If the <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Greatest%2520common%2520divisor.html">largest common factor</a> of the lengths
+of different paths from any state to itself is 1, the <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Markov%2520chain.html">Markov chain</a> is said to
+<strong>aperiodic</strong>. That is they are <a class="tc-tiddlylink tc-tiddlylink-missing" href="Coprime.html">Coprime</a>. One can produce any number greater than the product of two coprimes, by summing multiples of the coprimes <small>(consider for coprimes a and b, writting any number c as a*m + r, where r&lt;a. One can also see that k*a mod b visits every possible value of r as k ranges from 1 to b; this is enough to make any number greater than b*a).</small>  Therefore, after a time equal to the product of the smallest pair of coprimes in the duration of cycles, then for every time, there will be a path going back at that time, and so from that time on the probability of that state, if it was nonzero originally, will be nonzero.</p><p>Without aperiodicity, if the paths had gcd 2 say, then if we started at time 0, then, if we assume that the initial distribution was supported only in this state, then at odd times, the probability of the state has to be 0, while at even times it will be positive. Therefore, from this initial distribution the state can't converge to a stationary distribution.</p><p>Therefore, to prove convergence to a stationary distribution from any initial distribution, aperiodicity is a necessary condition. It is not necessary, however, for the <em>existence</em> of an stationary distribution <small>(consider, e.g. the Markov chain formed by a simple cycle between three states feeding to the next one with probability 1, which has stationary distribution 1/3, but also doesn't converge to it from any other distribution)</small></p></div>
+
+
+</div>
+
+</p>
+
+</section>
+</body>
+</html>

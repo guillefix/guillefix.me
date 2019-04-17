@@ -11,7 +11,7 @@
 <meta name="format-detection" content="telephone=no">
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" href="static.css">
-<title>MPI: Cosmos — Everything there was, there is, and there will be</title>
+<title>MPI: Cosmos — All that is, or was, or ever will be</title>
 </head>
 <body class="tc-body">
 
@@ -45,7 +45,7 @@ MPI
 <div class="tc-subtitle">
 <a class="tc-tiddlylink tc-tiddlylink-missing" href="cosmos.html">
 cosmos
-</a> 4th April 2017 at 12:12pm
+</a> 11th February 2019 at 3:52pm
 </div>
 </div>
 <div class=" tc-reveal">
@@ -54,7 +54,36 @@ cosmos
 <div class="tc-tiddler-body tc-reveal"><p>Message programming interface</p><p>Distributed memory <a class="tc-tiddlylink tc-tiddlylink-missing" href="Parallel%2520programming.html">Parallel programming</a></p><p>Multiple processes</p><p><code>MPI_Init()</code></p><p><code>MPI_Comm_rank()</code></p><p><code>MPI_Finalize()</code></p><p>MPI_Comm_size
 reports the size of the group of 
 processes associated with the specified <strong>communicator</strong> (a group of processes which communicate with each other).</p><p><code>MPI_Send</code> &lt;–&gt; <code>MPI_Recv</code></p><h3 class="">Deadlocks</h3><ul><li>When a process makes a call to MPI_Recv , it will wait patiently until a matching send is posted.</li><li>Similarly you must assume that when a process makes a call to MPI_Send it will wait until a matching recv is posted</li></ul><h3 class="">Reduces</h3><p><a class="tc-tiddlylink-external" href="http://mpitutorial.com/tutorials/mpi-reduce-and-allreduce/" rel="noopener noreferrer" target="_blank">http://mpitutorial.com/tutorials/mpi-reduce-and-allreduce/</a></p><p><code>MPI_Reduce</code></p><p><code>MPI_Allreduce</code>, MPI_Allreduce(const void *sendbuf, void *recvbuf, int count,
-                  MPI_Datatype datatype, MPI_Op op, MPI_Comm comm)</p></div>
+                  MPI_Datatype datatype, MPI_Op op, MPI_Comm comm)</p><hr><p>good way to parallelize a certain number of tasks indexed by an index using MPI, including case where I have many gpus.</p><pre><code>
+
+from mpi4py import MPI
+comm = MPI.COMM_WORLD
+rank = comm.Get_rank()
+size = comm.Get_size()
+print(rank)
+# num_inits_per_task = 1
+num_tasks = int(sys.argv[1])
+
+from tensorflow.python.client import device_lib
+
+def get_available_gpus():
+    local_device_protos = device_lib.list_local_devices()
+    return [x.name for x in local_device_protos if x.device_type == 'GPU']
+
+num_gpus = len(get_available_gpus())
+
+num_tasks_per_job = num_tasks//size
+tasks = list(range(rank*num_tasks_per_job,(rank+1)*num_tasks_per_job))
+
+if rank &lt; num_tasks%size:
+    tasks.append(size*num_tasks_per_job+rank)
+
+config = tf.ConfigProto(device_count={'GPU': rank%num_gpus})
+# config = tf.ConfigProto()
+config.gpu_options.allow_growth = True
+
+
+tf.enable_eager_execution(config=config)</code></pre></div>
 
 
 </div>
