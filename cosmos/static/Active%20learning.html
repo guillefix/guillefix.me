@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="generator" content="TiddlyWiki" />
-<meta name="tiddlywiki-version" content="5.1.15" />
+<meta name="tiddlywiki-version" content="5.1.21" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -16,8 +16,7 @@
 <body class="tc-body">
 
 <section class="tc-story-river">
-
-<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists   tc-tagged-Machine%20learning"><div class="tc-tiddler-title">
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-Machine%20learning" data-tags="[[Machine learning]]" data-tiddler-title="Active learning"><div class="tc-tiddler-title">
 <div class="tc-titlebar">
 <span class="tc-tiddler-controls">
 <span class=" tc-reveal"><button aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span>
@@ -45,31 +44,26 @@ Active learning
 <div class="tc-subtitle">
 <a class="tc-tiddlylink tc-tiddlylink-missing" href="cosmos.html">
 cosmos
-</a> 19th December 2018 at 8:07pm
+</a> 19th November 2019 at 10:04pm
 </div>
 </div>
 <div class=" tc-reveal">
 <div class="tc-tags-wrapper"><span class="tc-tag-list-item">
-
-
 <span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
 fill:#333333;
 color:#333333;">
  Machine learning
 </span>
-
-<span class="tc-drop-down tc-reveal" hidden="true"></span>
-
-</span>
+<span class="tc-drop-down tc-reveal" hidden="true"></span></span></div>
 </div>
-</div>
-<div class="tc-tiddler-body tc-reveal"><p><a class="tc-tiddlylink-external" href="https://www.youtube.com/watch?v=8jR9DkXY_ZU#t=34m" rel="noopener noreferrer" target="_blank">https://www.youtube.com/watch?v=8jR9DkXY_ZU#t=34m</a></p><p>See also <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Active%2520inference.html">Active inference</a></p><p>In <a class="tc-tiddlylink-external" href="http://sci-hub.cc/10.1162/089976600300014999" rel="noopener noreferrer" target="_blank">this paper</a>, active learning is framed as the algorithm selecting a set of examples from a pool of examples (instead of being fed examples by a predetermined distribution, as in supervised learning). Then he derives lower bounds for the number of examples needed, like the active analog of the same quantity in PAC supervised learning</p><hr><p><a class="tc-tiddlylink-external" href="https://projecteuclid.org/euclid.aos/1291388378" rel="noopener noreferrer" target="_blank">Rates of convergence in active learning</a></p></div>
+
+<div class="tc-tiddler-body tc-reveal"><p><a class="tc-tiddlylink-external" href="https://www.youtube.com/watch?v=8jR9DkXY_ZU#t=34m" rel="noopener noreferrer" target="_blank">https://www.youtube.com/watch?v=8jR9DkXY_ZU#t=34m</a></p><p>See some discussion in <a class="tc-tiddlylink-external" href="http://www.ki.tu-berlin.de/fileadmin/fg135/publikationen/opper/Op01.pdf#page=8" rel="noopener noreferrer" target="_blank">http://www.ki.tu-berlin.de/fileadmin/fg135/publikationen/opper/Op01.pdf#page=8</a> for perceptrons and for general algorithms. A general algorithm has been proposed <a class="tc-tiddlylink-external" href="https://dl.acm.org/citation.cfm?id=130417" rel="noopener noreferrer" target="_blank">(Seung et al., 1992a)</a> which uses the principle of maximal disagreement in a committee of several students as a selection process for training patterns. Using an appropriate randomized training strategy, different students are generated which all learn the same set of examples. Next, any new input vector is only accepted for training when the disagreement of its classification between the students is maximal. For a committee of two students it can be shown that when the number of examples is large, the information gain does not decrease but reaches a positive constant. This results in a much faster decrease of the generalization error. Instead of being inversely proportional to the number of examples, the decrease is now exponentially fast.</p><p>See also <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Active%2520inference.html">Active inference</a>, <a class="tc-tiddlylink tc-tiddlylink-missing" href="Query%2520learning.html">Query learning</a></p><p>In <a class="tc-tiddlylink-external" href="http://sci-hub.cc/10.1162/089976600300014999" rel="noopener noreferrer" target="_blank">this paper</a>, active learning is framed as the algorithm selecting a set of examples from a pool of examples (instead of being fed examples by a predetermined distribution, as in supervised learning). Then he derives lower bounds for the number of examples needed, like the active analog of the same quantity in PAC supervised learning</p><hr><p><a class="tc-tiddlylink-external" href="https://projecteuclid.org/euclid.aos/1291388378" rel="noopener noreferrer" target="_blank">Rates of convergence in active learning</a></p></div>
+
 
 
 </div>
 
 </p>
-
 </section>
 </body>
 </html>

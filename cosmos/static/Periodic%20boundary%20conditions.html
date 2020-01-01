@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="generator" content="TiddlyWiki" />
-<meta name="tiddlywiki-version" content="5.1.15" />
+<meta name="tiddlywiki-version" content="5.1.21" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -16,8 +16,7 @@
 <body class="tc-body">
 
 <section class="tc-story-river">
-
-<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists   tc-tagged-Functional%20analysis"><div class="tc-tiddler-title">
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-Functional%20analysis" data-tags="[[Functional analysis]]" data-tiddler-title="Periodic boundary conditions"><div class="tc-tiddler-title">
 <div class="tc-titlebar">
 <span class="tc-tiddler-controls">
 <span class=" tc-reveal"><button aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span>
@@ -45,33 +44,28 @@ Periodic boundary conditions
 <div class="tc-subtitle">
 <a class="tc-tiddlylink tc-tiddlylink-missing" href="cosmos.html">
 cosmos
-</a> 10th April 2019 at 9:58am
+</a> 10th April 2019 at 10:58am
 </div>
 </div>
 <div class=" tc-reveal">
 <div class="tc-tags-wrapper"><span class="tc-tag-list-item">
-
-
 <span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
 fill:#333333;
 color:#333333;">
  Functional analysis
 </span>
-
-<span class="tc-drop-down tc-reveal" hidden="true"></span>
-
-</span>
+<span class="tc-drop-down tc-reveal" hidden="true"></span></span></div>
 </div>
-</div>
+
 <div class="tc-tiddler-body tc-reveal"><p>A trick to estimate the eigenvalues of operators whose kernel is only localized in a region small compared to the size of the input domain. Intuitively, if interactions are only local, then whether the boundaries are periodic or if the domain truly terminates there, doesn't affect the answer much.</p><p>However, assuming periodicity of the functions allows for easier calculation of eigenvalues and eigenfunctions. If the kernel is translationally invariant assuming it is periodic and defined over the whole real line, rather than just defined on a finite domain, makes it diagnoalizable in the Fourier basis, and its eigenvalues be just its Fourier coefficients! If the periodic boundary condition is a good approximation (the case if the intuitive conditions of locality above are met), then this is a good approximation to the true eigenvalues and eigenfunctions!</p><p>Note that e^iqx is an eigenfunction because c(x,x') is a function of x-x' only (translationally invariant)
 but this is over the whole real line as domain
 for this to hold over the [0,1] domain, c(x,x') should be periodic with period 1 (in particular it should have the same integral across any interval of size one for which x is in [0,1]). But it isn't exactly. But if the length scale of c(x,x') is much smaller than 1, then the condition of the invariant integral above is quite close to be true, and we can approximate the relevant integral as the integral of C(0,x') over x' from <span><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">-\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.58333em;"></span><span class="strut bottom" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord">−</span><span class="mord mathrm">∞</span></span></span></span></span> to <span><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">∞</span></span></span></span></span></p><p>Used often in <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Quantum%2520mechanics.html">Quantum mechanics</a></p><p><a class="tc-tiddlylink-external" href="https://pdfs.semanticscholar.org/7294/862e59c8c3a65167260c0156427f4757c67e.pdf" rel="noopener noreferrer" target="_blank">example of use</a></p></div>
 
 
+
 </div>
 
 </p>
-
 </section>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="generator" content="TiddlyWiki" />
-<meta name="tiddlywiki-version" content="5.1.15" />
+<meta name="tiddlywiki-version" content="5.1.21" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -16,8 +16,7 @@
 <body class="tc-body">
 
 <section class="tc-story-river">
-
-<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists   tc-tagged-Bayesian%20deep%20learning"><div class="tc-tiddler-title">
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-Bayesian%20deep%20learning" data-tags="[[Bayesian deep learning]]" data-tiddler-title="Bayesian neural network"><div class="tc-tiddler-title">
 <div class="tc-titlebar">
 <span class="tc-tiddler-controls">
 <span class=" tc-reveal"><button aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span>
@@ -45,31 +44,26 @@ Bayesian neural network
 <div class="tc-subtitle">
 <a class="tc-tiddlylink tc-tiddlylink-missing" href="cosmos.html">
 cosmos
-</a> 10th April 2019 at 9:58am
+</a> 10th April 2019 at 10:58am
 </div>
 </div>
 <div class=" tc-reveal">
 <div class="tc-tags-wrapper"><span class="tc-tag-list-item">
-
-
 <span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
 fill:#333333;
 color:#333333;">
  Bayesian deep learning
 </span>
-
-<span class="tc-drop-down tc-reveal" hidden="true"></span>
-
-</span>
+<span class="tc-drop-down tc-reveal" hidden="true"></span></span></div>
 </div>
-</div>
+
 <div class="tc-tiddler-body tc-reveal"><p>A parametric <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Probabilistic%2520model.html">Probabilistic model</a> of functions, given by a <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Artificial%2520neural%2520network.html">neural network</a>. That is, a <strong>Bayesian neural network</strong> is a probability distribution over a set of functions (all functions implementable by a given neural network architecture <span><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10903em;">N</span></span></span></span></span>), induced by a probability distribution on the weights/<a class="tc-tiddlylink tc-tiddlylink-missing" href="Parameter.html">Parameter</a>s of the neural network <span><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10903em;">N</span></span></span></span></span>.</p><p>Given the architecture, we can just focus on the distribution over parameters <span><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mo>(</mo><mi>θ</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">P(\theta)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.02778em;">θ</span><span class="mclose">)</span></span></span></span></span>. This is the <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Prior%2520distribution.html">Prior distribution</a>. As per <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Bayes'%2520theorem.html">Bayes' theorem</a>, the posterior distribution over parameters is given by the normalized product of the prior and the <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Likelihood.html">Likelihood</a> (the probability of the data (input output pairs) given a parameter <span><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">θ</span></span></span></span></span>).</p><p><a class="tc-tiddlylink-external" href="http://mlg.eng.cam.ac.uk/yarin/blog_2248.html" rel="noopener noreferrer" target="_blank">http://mlg.eng.cam.ac.uk/yarin/blog_2248.html</a></p></div>
+
 
 
 </div>
 
 </p>
-
 </section>
 </body>
 </html>

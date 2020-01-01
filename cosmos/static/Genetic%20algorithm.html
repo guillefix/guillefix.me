@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="generator" content="TiddlyWiki" />
-<meta name="tiddlywiki-version" content="5.1.15" />
+<meta name="tiddlywiki-version" content="5.1.21" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -16,8 +16,7 @@
 <body class="tc-body">
 
 <section class="tc-story-river">
-
-<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists   tc-tagged-Evolutionary%20computing"><div class="tc-tiddler-title">
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-Evolutionary%20computing" data-tags="[[Evolutionary computing]]" data-tiddler-title="Genetic algorithm"><div class="tc-tiddler-title">
 <div class="tc-titlebar">
 <span class="tc-tiddler-controls">
 <span class=" tc-reveal"><button aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span>
@@ -45,24 +44,19 @@ Genetic algorithm
 <div class="tc-subtitle">
 <a class="tc-tiddlylink tc-tiddlylink-missing" href="cosmos.html">
 cosmos
-</a> 28th February 2018 at 2:18pm
+</a> 28th February 2018 at 3:18pm
 </div>
 </div>
 <div class=" tc-reveal">
 <div class="tc-tags-wrapper"><span class="tc-tag-list-item">
-
-
 <span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
 fill:#333333;
 color:#333333;">
  Evolutionary computing
 </span>
-
-<span class="tc-drop-down tc-reveal" hidden="true"></span>
-
-</span>
+<span class="tc-drop-down tc-reveal" hidden="true"></span></span></div>
 </div>
-</div>
+
 <div class="tc-tiddler-body tc-reveal"><p><a class="tc-tiddlylink tc-tiddlylink-resolves" href="Genetic%2520programming.html">Genetic programming</a></p><p><a class="tc-tiddlylink-external" href="https://engineering.purdue.edu/~sudhoff/ee630/Lecture02.pdf" rel="noopener noreferrer" target="_blank">presentation</a></p><p><a class="tc-tiddlylink-external" href="https://www.youtube.com/watch?v=BBLJFYr7zB8" rel="noopener noreferrer" target="_blank">example</a></p><p>See Holland's work. For e.g.</p><p>Holland, J. H. (1992). Adaptation in Natural and Artificial Systems, MIT Press, Cambridge MA.</p><p><a class="tc-tiddlylink-external" href="http://link.springer.com/chapter/10.1007/3-540-32444-5_3" rel="noopener noreferrer" target="_blank">Three Elements of a Theory of Representations</a></p><p><a class="tc-tiddlylink-external" href="http://www.mitpressjournals.org/doi/abs/10.1162/106365603322519288#.Vx6xwmqKHCI" rel="noopener noreferrer" target="_blank">Redundant Representations in Evolutionary Computation</a>
 As a result, uniformly redundant representations do not change the behavior of GAs. Only by increasing r, which means overrepresenting the optimal solution, does GA performance increase. Therefore, non-uniformly redundant representations can only be used advantageously if a-priori information exists regarding the optimal solution. &lt;&gt; <a class="tc-tiddlylink tc-tiddlylink-resolves" href="No%2520free%2520lunch%2520theorem.html">No free lunch theorem</a></p><p>Bias towards simplicity (see <a class="tc-tiddlylink tc-tiddlylink-resolves" href="MMathPhys%2520oral%2520presentation.html">MMathPhys oral presentation</a>) similar to regularization in <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Machine%2520learning.html">Machine learning</a>?</p><p>First about genotype-phenotype maps in general, I have found that the literature on evolutionary computation/genetic algorithms has quite a lot of good research onto the effects of GP maps in evolution.Here is an example: <a class="tc-tiddlylink-external" href="https://link.springer.com/article/10.1007/s10710-012-9159-4" rel="noopener noreferrer" target="_blank">https://link.springer.com/article/10.1007/s10710-012-9159-4</a> , they call &quot;phenotypic robustness&quot; to what we call the phenotype's frequency, on the arrival of the frequent. </p><p>This other one (<a class="tc-tiddlylink-external" href="https://link.springer.com/chapter/10.1007/978-3-319-10762-2_42" rel="noopener noreferrer" target="_blank">https://link.springer.com/chapter/10.1007/978-3-319-10762-2_42</a> ), whose conclusion is like a prelude to our current findings:
 &quot;We conjecture that genotype networks could be shaped very differently in other GP systems, however our current observations capture
@@ -98,10 +92,10 @@ be active [82, 84], on many real world applications, length bias may actually be
 I should read the second paper more carefuly, because it has plots that are similar to those showing &quot;randomness deficit&quot;. However, he is actually looking at &quot;genotypic complexity&quot;, and so the normal simplicity bias seems not to be there.</p><hr><p><a class="tc-tiddlylink-external" href="https://www.youtube.com/watch?v=_of6UVV4HGo" rel="noopener noreferrer" target="_blank">simple intro vid</a></p></div>
 
 
+
 </div>
 
 </p>
-
 </section>
 </body>
 </html>

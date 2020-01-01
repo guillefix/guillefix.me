@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="generator" content="TiddlyWiki" />
-<meta name="tiddlywiki-version" content="5.1.15" />
+<meta name="tiddlywiki-version" content="5.1.21" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -16,8 +16,7 @@
 <body class="tc-body">
 
 <section class="tc-story-river">
-
-<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists   tc-tagged-Computer%20Science%20and%20IT"><div class="tc-tiddler-title">
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-Computer%20Science%20and%20IT" data-tags="[[Computer Science and IT]]" data-tiddler-title="Software"><div class="tc-tiddler-title">
 <div class="tc-titlebar">
 <span class="tc-tiddler-controls">
 <span class=" tc-reveal"><button aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span>
@@ -45,32 +44,27 @@ Software
 <div class="tc-subtitle">
 <a class="tc-tiddlylink tc-tiddlylink-missing" href="cosmos.html">
 cosmos
-</a> 29th December 2018 at 12:32am
+</a> 29th December 2018 at 1:32am
 </div>
 </div>
 <div class=" tc-reveal">
 <div class="tc-tags-wrapper"><span class="tc-tag-list-item">
-
-
 <span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
 fill:#333333;
 color:#333333;">
  Computer Science and IT
 </span>
-
-<span class="tc-drop-down tc-reveal" hidden="true"></span>
-
-</span>
+<span class="tc-drop-down tc-reveal" hidden="true"></span></span></div>
 </div>
-</div>
+
 <div class="tc-tiddler-body tc-reveal"><p>A hardware-software divide is just a way of describing a system that is optimized for human control of the system.</p><p><a class="tc-tiddlylink-external" href="https://github.com/sindresorhus/awesome" rel="noopener noreferrer" target="_blank">https://github.com/sindresorhus/awesome</a></p><p><u>Keylogger</u></p><p><em>Simple keylogger</em></p><p>To open the keylogger log (which is very long), get part of the log only, using <code>tail</code>: <a class="tc-tiddlylink-external" href="http://www.computerhope.com/unix/utail.htm" rel="noopener noreferrer" target="_blank">http://www.computerhope.com/unix/utail.htm</a></p><p><code>cd /var/log/</code></p><p><code>tail -c 10000 skeylogger.log </code></p><p><em>How to parse the output</em></p><p><a class="tc-tiddlylink-external" href="https://gist.github.com/kelly-ry4n/44822005a02d9ff115c12e4075adb256" rel="noopener noreferrer" target="_blank">https://gist.github.com/kelly-ry4n/44822005a02d9ff115c12e4075adb256</a></p><p><a class="tc-tiddlylink-external" href="https://www.facebook.com/groups/hackathonhackers/permalink/1232180336837449/?comment_id=1232200533502096" rel="noopener noreferrer" target="_blank">https://www.facebook.com/groups/hackathonhackers/permalink/1232180336837449/?comment_id=1232200533502096</a></p><h3 class=""><u>Software-hardware divide and <a class="tc-tiddlylink tc-tiddlylink-resolves" href="Abstraction.html">Abstraction</a></u></h3><p>There miriads of ways of describing the same system (say making mathematical models of it).
 For example, we may fully (or almost fully) describe a particular computer in terms of either electrons, transistors, circuits, logic gates, boolean functions, turing machines, finite-state automata, machine code, high-level programming languages, or combinations of these. </p><p>We can choose some of these descriptions, say, as moving electrons, or as a huge finite-state automaton. These are not very useful for knowing how to control the computer. On the other extreme, we may choose the standard description of a hierarchy where at the low level are electrons moving, then transistors, gates, and so on until high level programming languages. This is much more useful for control by us. To be precise, the hardware-software hierarchical description distills the simplest description of the lower levels that maximizes our ability to control them.</p><p>This is just the same as the thing we do to describe everyday objects. We think of a bus, say, at many levels of abstraction, which can be interpreted as a hardware-software divide, where software correspond the higher levels of abstraction, optimized for control/usefulness. You don't think, when you go into a bus &quot;ok i'm going to use this bunch of atoms to change my position by a couple of kilometers; first I need to move the air molecules around me, and simultaneously create a light field of the appropriate form that will excite molecules in the so-called eyes of this lump of organic molecules in front of me, in a way that will cause a complicated chain reaction that will make it not obstruct my way, and subsequently cause changes in the appropriate molecules which will cause the so-called wheels to spin, and blah blah blah&quot;, instead you think &quot;I'm just gonna step in, say &quot;hi&quot;, pay the bus driver, and sit in a chair&quot;. The former is the hardware-description (which is complete, and valid), the later is the software description (which is not-quite-complete, but has the essence of what's going on for most common situations, and is particularly useful to actually use a bus!)</p><p>(wrote it here: <a class="tc-tiddlylink-external" href="https://www.facebook.com/guillermovalleperez" rel="noopener noreferrer" target="_blank">https://www.facebook.com/guillermovalleperez</a>)</p></div>
+
 
 
 </div>
 
 </p>
-
 </section>
 </body>
 </html>
